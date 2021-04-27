@@ -11,6 +11,10 @@ const Form = () => {
       <Provider>
         <Inputs />
         <Btn />
+        <p>
+          <a href="/register">Register </a>
+          Here!!
+        </p>
       </Provider>
     </div>
   );
