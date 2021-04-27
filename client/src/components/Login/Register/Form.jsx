@@ -1,7 +1,16 @@
+import Btn from "./Btn.jsx";
+import Inputs from "./Inputs.jsx";
+import { Provider } from "../../Pages/Context.jsx";
+import useStyles from "./styles.jsx";
+
 const Form = () => {
+  const classes = useStyles();
   return (
-    <div>
-      <h3>form</h3>
+    <div className={classes.form}>
+      <Provider>
+        <Inputs />
+        <Btn />
+      </Provider>
     </div>
   );
 };
